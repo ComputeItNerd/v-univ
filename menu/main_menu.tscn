@@ -1,0 +1,198 @@
+[gd_scene load_steps=17 format=3 uid="uid://bvbiyplio2k1"]
+
+[ext_resource type="Script" path="res://menu/MainMenu.cs" id="1_7pgf1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x8iug"]
+bg_color = Color(0.460652, 0.630922, 0.694524, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hsyad"]
+bg_color = Color(0.274961, 0.650541, 0.795001, 1)
+border_blend = true
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+shadow_size = 10
+
+[sub_resource type="FontVariation" id="FontVariation_7hfcn"]
+spacing_glyph = 10
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_65nwu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f3tl5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_30q88"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6qf0l"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vi13o"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gsdlo"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bgp38"]
+bg_color = Color(0.27451, 0.65098, 0.796078, 1)
+border_width_left = 100
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_c5om8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gqxco"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vybll"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fhmhu"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3rn8e"]
+bg_color = Color(0.27451, 0.65098, 0.796078, 1)
+border_blend = true
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+shadow_size = 10
+
+[node name="main_menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7pgf1")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="MarginContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_x8iug")
+
+[node name="BoxContainer" type="BoxContainer" parent="MarginContainer/Panel"]
+layout_mode = 2
+offset_top = 24.0
+offset_right = 1152.0
+offset_bottom = 624.0
+
+[node name="left_margin" type="HBoxContainer" parent="MarginContainer/Panel/BoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="middle_margin" type="VBoxContainer" parent="MarginContainer/Panel/BoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 30
+
+[node name="explore" type="Panel" parent="MarginContainer/Panel/BoxContainer/middle_margin"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_hsyad")
+
+[node name="explore" type="Button" parent="MarginContainer/Panel/BoxContainer/middle_margin/explore"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = SubResource("FontVariation_7hfcn")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/focus = SubResource("StyleBoxEmpty_65nwu")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_f3tl5")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_30q88")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_6qf0l")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_vi13o")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_gsdlo")
+theme_override_styles/hover = SubResource("StyleBoxFlat_bgp38")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_c5om8")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_gqxco")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_vybll")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_fhmhu")
+toggle_mode = true
+action_mode = 0
+text = "Explore"
+icon_alignment = 1
+
+[node name="settings" type="Panel" parent="MarginContainer/Panel/BoxContainer/middle_margin"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_3rn8e")
+
+[node name="settings" type="Button" parent="MarginContainer/Panel/BoxContainer/middle_margin/settings"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = SubResource("FontVariation_7hfcn")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/focus = SubResource("StyleBoxEmpty_65nwu")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_f3tl5")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_30q88")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_6qf0l")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_vi13o")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_gsdlo")
+theme_override_styles/hover = SubResource("StyleBoxFlat_bgp38")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_c5om8")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_gqxco")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_vybll")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_fhmhu")
+toggle_mode = true
+action_mode = 0
+text = "Settings"
+icon_alignment = 1
+
+[node name="quit" type="Panel" parent="MarginContainer/Panel/BoxContainer/middle_margin"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_3rn8e")
+
+[node name="quit" type="Button" parent="MarginContainer/Panel/BoxContainer/middle_margin/quit"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = SubResource("FontVariation_7hfcn")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/focus = SubResource("StyleBoxEmpty_65nwu")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_f3tl5")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_30q88")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_6qf0l")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_vi13o")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_gsdlo")
+theme_override_styles/hover = SubResource("StyleBoxFlat_bgp38")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_c5om8")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_gqxco")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_vybll")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_fhmhu")
+action_mode = 0
+text = "Quit
+"
+icon_alignment = 1
+
+[node name="right_margin" type="HBoxContainer" parent="MarginContainer/Panel/BoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[connection signal="focus_entered" from="MarginContainer/Panel/BoxContainer/middle_margin/explore/explore" to="." method="_on_courses_focus_entered"]
+[connection signal="focus_exited" from="MarginContainer/Panel/BoxContainer/middle_margin/explore/explore" to="." method="_on_courses_focus_exited"]
+[connection signal="pressed" from="MarginContainer/Panel/BoxContainer/middle_margin/explore/explore" to="." method="_on_courses_pressed"]
+[connection signal="focus_entered" from="MarginContainer/Panel/BoxContainer/middle_margin/settings/settings" to="." method="_on_courses_focus_entered"]
+[connection signal="focus_exited" from="MarginContainer/Panel/BoxContainer/middle_margin/settings/settings" to="." method="_on_courses_focus_exited"]
+[connection signal="focus_entered" from="MarginContainer/Panel/BoxContainer/middle_margin/quit/quit" to="." method="_on_courses_focus_entered"]
+[connection signal="focus_exited" from="MarginContainer/Panel/BoxContainer/middle_margin/quit/quit" to="." method="_on_courses_focus_exited"]

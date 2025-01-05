@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bjnkb4hwjn2go"]
+
+[ext_resource type="Script" path="res://menu/Main.cs" id="1_c75db"]
+[ext_resource type="PackedScene" uid="uid://bvbiyplio2k1" path="res://menu/main_menu.tscn" id="1_pj703"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_c75db")
+
+[node name="main_menu" parent="." instance=ExtResource("1_pj703")]
+layout_mode = 1

@@ -1,0 +1,131 @@
+[gd_scene load_steps=4 format=3 uid="uid://deaoxl4ob7tnl"]
+
+[ext_resource type="Script" path="res://setting/Themes.cs" id="1_qidfw"]
+[ext_resource type="Texture2D" uid="uid://wfuln6oak6m6" path="res://assets/X_icon.png" id="2_t70vi"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ukk7e"]
+bg_color = Color(0.212416, 0.647227, 0.851122, 1)
+
+[node name="Themes" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qidfw")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="MarginContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ukk7e")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = -16.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+
+[node name="labels" type="VBoxContainer" parent="MarginContainer/Panel/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 15
+
+[node name="Panel" type="Panel" parent="MarginContainer/Panel/HBoxContainer/labels"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="MarginContainer/Panel/HBoxContainer/labels/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_outline_size = 15
+text = "Main Menu Bacground Color"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Panel2" type="Panel" parent="MarginContainer/Panel/HBoxContainer/labels"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Panel3" type="Panel" parent="MarginContainer/Panel/HBoxContainer/labels"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Panel4" type="Panel" parent="MarginContainer/Panel/HBoxContainer/labels"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Panel5" type="Panel" parent="MarginContainer/Panel/HBoxContainer/labels"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Panel6" type="Panel" parent="MarginContainer/Panel/HBoxContainer/labels"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="variables" type="VBoxContainer" parent="MarginContainer/Panel/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 15
+
+[node name="Panel" type="Panel" parent="MarginContainer/Panel/HBoxContainer/variables"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="main_menu_background_color" type="ColorPickerButton" parent="MarginContainer/Panel/HBoxContainer/variables/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel2" type="Panel" parent="MarginContainer/Panel/HBoxContainer/variables"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Panel3" type="Panel" parent="MarginContainer/Panel/HBoxContainer/variables"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Panel4" type="Panel" parent="MarginContainer/Panel/HBoxContainer/variables"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Panel5" type="Panel" parent="MarginContainer/Panel/HBoxContainer/variables"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Panel6" type="Panel" parent="MarginContainer/Panel/HBoxContainer/variables"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="back" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 1136.0
+offset_right = 1152.0
+offset_bottom = 16.0
+toggle_mode = true
+texture_normal = ExtResource("2_t70vi")
+
+[connection signal="color_changed" from="MarginContainer/Panel/HBoxContainer/variables/Panel/main_menu_background_color" to="." method="_on_main_menu_background_color_color_changed"]
