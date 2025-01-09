@@ -54,7 +54,7 @@ corner_radius_bottom_right = 100
 corner_radius_bottom_left = 100
 shadow_size = 10
 
-[node name="main_menu" type="Control"]
+[node name="main_menu" type="Control" groups=["Tabs"]]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -71,31 +71,31 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Panel" type="Panel" parent="MarginContainer"]
+[node name="BackGround" type="Panel" parent="MarginContainer" groups=["Tabs"]]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_x8iug")
 
-[node name="BoxContainer" type="BoxContainer" parent="MarginContainer/Panel"]
+[node name="BoxContainer" type="BoxContainer" parent="MarginContainer/BackGround"]
 layout_mode = 2
 offset_top = 24.0
 offset_right = 1152.0
 offset_bottom = 624.0
 
-[node name="left_margin" type="HBoxContainer" parent="MarginContainer/Panel/BoxContainer"]
+[node name="left_margin" type="HBoxContainer" parent="MarginContainer/BackGround/BoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="middle_margin" type="VBoxContainer" parent="MarginContainer/Panel/BoxContainer"]
+[node name="middle_margin" type="VBoxContainer" parent="MarginContainer/BackGround/BoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_constants/separation = 30
 
-[node name="explore" type="Panel" parent="MarginContainer/Panel/BoxContainer/middle_margin"]
+[node name="explore" type="Panel" parent="MarginContainer/BackGround/BoxContainer/middle_margin"]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxFlat_hsyad")
 
-[node name="explore" type="Button" parent="MarginContainer/Panel/BoxContainer/middle_margin/explore"]
+[node name="explore" type="Button" parent="MarginContainer/BackGround/BoxContainer/middle_margin/explore"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -120,12 +120,12 @@ action_mode = 0
 text = "Explore"
 icon_alignment = 1
 
-[node name="settings" type="Panel" parent="MarginContainer/Panel/BoxContainer/middle_margin"]
+[node name="settings" type="Panel" parent="MarginContainer/BackGround/BoxContainer/middle_margin"]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxFlat_3rn8e")
 
-[node name="settings" type="Button" parent="MarginContainer/Panel/BoxContainer/middle_margin/settings"]
+[node name="settings" type="Button" parent="MarginContainer/BackGround/BoxContainer/middle_margin/settings"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -150,12 +150,12 @@ action_mode = 0
 text = "Settings"
 icon_alignment = 1
 
-[node name="quit" type="Panel" parent="MarginContainer/Panel/BoxContainer/middle_margin"]
+[node name="quit" type="Panel" parent="MarginContainer/BackGround/BoxContainer/middle_margin"]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxFlat_3rn8e")
 
-[node name="quit" type="Button" parent="MarginContainer/Panel/BoxContainer/middle_margin/quit"]
+[node name="quit" type="Button" parent="MarginContainer/BackGround/BoxContainer/middle_margin/quit"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -180,7 +180,7 @@ text = "Quit
 "
 icon_alignment = 1
 
-[node name="right_margin" type="HBoxContainer" parent="MarginContainer/Panel/BoxContainer"]
+[node name="right_margin" type="HBoxContainer" parent="MarginContainer/BackGround/BoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 
@@ -189,10 +189,11 @@ layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[connection signal="focus_entered" from="MarginContainer/Panel/BoxContainer/middle_margin/explore/explore" to="." method="_on_courses_focus_entered"]
-[connection signal="focus_exited" from="MarginContainer/Panel/BoxContainer/middle_margin/explore/explore" to="." method="_on_courses_focus_exited"]
-[connection signal="pressed" from="MarginContainer/Panel/BoxContainer/middle_margin/explore/explore" to="." method="_on_courses_pressed"]
-[connection signal="focus_entered" from="MarginContainer/Panel/BoxContainer/middle_margin/settings/settings" to="." method="_on_courses_focus_entered"]
-[connection signal="focus_exited" from="MarginContainer/Panel/BoxContainer/middle_margin/settings/settings" to="." method="_on_courses_focus_exited"]
-[connection signal="focus_entered" from="MarginContainer/Panel/BoxContainer/middle_margin/quit/quit" to="." method="_on_courses_focus_entered"]
-[connection signal="focus_exited" from="MarginContainer/Panel/BoxContainer/middle_margin/quit/quit" to="." method="_on_courses_focus_exited"]
+[connection signal="tree_entered" from="." to="." method="_on_tree_entered"]
+[connection signal="focus_entered" from="MarginContainer/BackGround/BoxContainer/middle_margin/explore/explore" to="." method="_on_courses_focus_entered"]
+[connection signal="focus_exited" from="MarginContainer/BackGround/BoxContainer/middle_margin/explore/explore" to="." method="_on_courses_focus_exited"]
+[connection signal="pressed" from="MarginContainer/BackGround/BoxContainer/middle_margin/explore/explore" to="." method="_on_courses_pressed"]
+[connection signal="focus_entered" from="MarginContainer/BackGround/BoxContainer/middle_margin/settings/settings" to="." method="_on_courses_focus_entered"]
+[connection signal="focus_exited" from="MarginContainer/BackGround/BoxContainer/middle_margin/settings/settings" to="." method="_on_courses_focus_exited"]
+[connection signal="focus_entered" from="MarginContainer/BackGround/BoxContainer/middle_margin/quit/quit" to="." method="_on_courses_focus_entered"]
+[connection signal="focus_exited" from="MarginContainer/BackGround/BoxContainer/middle_margin/quit/quit" to="." method="_on_courses_focus_exited"]

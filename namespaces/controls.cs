@@ -10,7 +10,7 @@ namespace commonTools
         public String SettingsMenu = "res://menu/settings_menu.tscn";
         public String ExploreMenu = "res://menu/explore_menu.tscn";
 
-        public void Open(string path)
+        public void SwitchTo(string path)
         {
             Color Alpha = Modulate;
             if (Alpha.A >= 0.0f)
@@ -24,6 +24,15 @@ namespace commonTools
                 GetParent().AddChild(menu);
                 Free();
             }
+        }
+
+        public void SetTheme(string property, Variant value, Panel node)
+        {
+            StyleBoxFlat stylebox = (StyleBoxFlat)node.GetThemeStylebox("panel").Duplicate();
+
+            stylebox.Set(property, value);
+
+            node.AddThemeStyleboxOverride("panel", stylebox);
         }
     }
 }

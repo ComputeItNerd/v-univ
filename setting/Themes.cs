@@ -21,9 +21,24 @@ public partial class Themes : tool
     {
         if (back.ButtonPressed == true)
         {
-            Open(SettingsMenu);
+            SwitchTo(SettingsMenu);
         }
     }
 
-    private void _on_main_menu_background_color_color_changed(Color color) { }
+    private void _on_main_menu_background_color_color_changed(Color color)
+    {
+        /*GD.Print(color);
+        var nodes = GetTree().GetNodesInGroup("Tabs");
+        int nodecount = GetTree().GetNodeCountInGroup("Tabs");
+        for (int i = 0; i < nodecount; i++)
+        {
+            //GD.Print(node.Name);
+            if (nodes[i].Name == "BackGround")
+            {
+                tool toolnode = (tool)nodes[i];
+                Panel panelnode = (Panel)nodes[i];
+                toolnode.SetTheme("BgColor", color, panelnode);
+            }
+        }*/
+    }
 }

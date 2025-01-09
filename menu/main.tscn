@@ -14,3 +14,5 @@ script = ExtResource("1_c75db")
 
 [node name="main_menu" parent="." instance=ExtResource("1_pj703")]
 layout_mode = 1
+
+[connection signal="child_order_changed" from="." to="." method="_on_child_order_changed"]

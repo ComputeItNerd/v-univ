@@ -92,13 +92,14 @@ theme_override_constants/separation = 15
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="main_menu_background_color" type="ColorPickerButton" parent="MarginContainer/Panel/HBoxContainer/variables/Panel"]
+[node name="main_menu_background_color" type="ColorPickerButton" parent="MarginContainer/Panel/HBoxContainer/variables/Panel" groups=["Tabs"]]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+color = Color(0.458824, 0.631373, 0.694118, 1)
 
 [node name="Panel2" type="Panel" parent="MarginContainer/Panel/HBoxContainer/variables"]
 layout_mode = 2

@@ -1,0 +1,65 @@
+[gd_scene load_steps=3 format=3 uid="uid://enghppgduted"]
+
+[ext_resource type="Script" path="res://menu/ExploreMenu.cs" id="1_fa8ks"]
+[ext_resource type="Texture2D" uid="uid://wfuln6oak6m6" path="res://assets/X_icon.png" id="2_fhu55"]
+
+[node name="proffesors" type="Control" groups=["Tabs"]]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_fa8ks")
+
+[node name="PanelContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PanelContainer" type="PanelContainer" parent="PanelContainer"]
+layout_mode = 2
+
+[node name="BackGround" type="Panel" parent="PanelContainer/PanelContainer"]
+layout_mode = 2
+
+[node name="ForeGround" type="Panel" parent="PanelContainer/PanelContainer/BackGround"]
+layout_mode = 2
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 1136.0
+offset_bottom = 632.0
+
+[node name="proffessors" type="MarginContainer" parent="PanelContainer/PanelContainer/BackGround"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = -16.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/PanelContainer/BackGround/proffessors"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="col" type="VBoxContainer" parent="PanelContainer/PanelContainer/BackGround/proffessors/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 10
+
+[node name="col2" type="VBoxContainer" parent="PanelContainer/PanelContainer/BackGround/proffessors/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 10
+
+[node name="back" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 1136.0
+offset_right = 1152.0
+offset_bottom = 16.0
+toggle_mode = true
+texture_normal = ExtResource("2_fhu55")
+
+[connection signal="tree_entered" from="." to="." method="_on_tree_entered"]

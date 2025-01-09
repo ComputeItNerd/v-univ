@@ -1,11 +1,14 @@
 using System;
+using commonTools;
 using Godot;
 
-public partial class MainMenu : Control
+public partial class MainMenu : tool
 {
     public Button Explore;
     public Button settings;
     public Button quit;
+
+    public Panel BackGround;
 
     private String MainMenu_ = "res://menu/main_menu.tscn";
     private String SettingsMenu = "res://menu/settings_menu.tscn";
@@ -14,13 +17,15 @@ public partial class MainMenu : Control
     // Called when the node enters the scene tree for the first time.
     public override void _Ready()
     {
+        BackGround = GetNode<Panel>("MarginContainer/BackGround");
+
         Explore = GetNode<Button>(
-            "MarginContainer/Panel/BoxContainer/middle_margin/explore/explore"
+            "MarginContainer/BackGround/BoxContainer/middle_margin/explore/explore"
         );
         settings = GetNode<Button>(
-            "MarginContainer/Panel/BoxContainer/middle_margin/settings/settings"
+            "MarginContainer/BackGround/BoxContainer/middle_margin/settings/settings"
         );
-        quit = GetNode<Button>("MarginContainer/Panel/BoxContainer/middle_margin/quit/quit");
+        quit = GetNode<Button>("MarginContainer/BackGround/BoxContainer/middle_margin/quit/quit");
     }
 
     // Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -29,11 +34,11 @@ public partial class MainMenu : Control
         //GD.Print("MainMenu is Processing");
         if (Explore.ButtonPressed == true)
         {
-            OpenMenu(ExploreMenu);
+            SwitchTo(ExploreMenu);
         }
         else if (settings.ButtonPressed == true)
         {
-            OpenMenu(SettingsMenu);
+            SwitchTo(SettingsMenu);
         }
         else if (quit.ButtonPressed == true)
         {
@@ -48,21 +53,4 @@ public partial class MainMenu : Control
         styleBox.BorderWidthLeft += 1;
     }
     Explore.AddThemeStyleboxOverride("panel", styleBox);*/
-
-    private void OpenMenu(string path)
-    {
-        Color Alpha = Modulate;
-        if (Alpha.A >= 0.0f)
-        {
-            Alpha.A -= 0.1f;
-            Modulate = Alpha;
-        }
-        else
-        {
-            //var menu = ResourceLoader.Load<PackedScene>(path).Instantiate();
-            var menu = ResourceLoader.Load<PackedScene>(path).Instantiate();
-            GetParent().AddChild(menu);
-            Free();
-        }
-    }
 }

@@ -18,7 +18,7 @@ expand_margin_right = 5.0
 expand_margin_bottom = 5.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7abwt"]
-bg_color = Color(0, 0.243137, 0.556863, 1)
+bg_color = Color(0.204727, 0.481815, 0.518914, 1)
 corner_radius_top_left = 15
 corner_radius_top_right = 15
 corner_radius_bottom_right = 15
@@ -46,7 +46,7 @@ corner_radius_bottom_left = 15
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gl84e"]
 
-[node name="settings_menu" type="Control"]
+[node name="settings_menu" type="Control" groups=["Tabs"]]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_thpbs")

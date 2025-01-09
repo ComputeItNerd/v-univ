@@ -24,11 +24,11 @@ public partial class SettingsMenu : tool
     {
         if (back.ButtonPressed == true)
         {
-            Open(MainMenu);
+            SwitchTo(MainMenu);
         }
         else if (themes.ButtonPressed == true)
         {
-            Open(Themes);
+            SwitchTo(Themes);
         }
     }
 }
