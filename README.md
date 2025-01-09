@@ -43,3 +43,10 @@ Ang pangunahing prinsipyo ng proyektong ito ay magbigay ng mga kurso na ang guro
 
 ## Hindi ko alam kung paano mag-code?
 Makipag-ugnayan sa mga admin ng grupo upang turuan ka nila.
+
+# Project Progress
+
+![Screenshot 2025-01-10 024454](https://github.com/user-attachments/assets/f5f77f02-51cb-46e1-8da7-c0462bc56dd7)
+![Screenshot 2025-01-10 024440](https://github.com/user-attachments/assets/9ae32860-eb3e-43f8-a633-2082944e5332)
+![Screenshot 2025-01-10 024445](https://github.com/user-attachments/assets/4e8239cb-3b47-4061-827b-e136af65e837)
+
