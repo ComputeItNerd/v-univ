@@ -1,7 +1,30 @@
-[gd_scene load_steps=2 format=3 uid="uid://bjgssvj2qytbe"]
+[gd_scene load_steps=5 format=3 uid="uid://bjgssvj2qytbe"]
+
+[ext_resource type="Script" path="res://menu/explore/courses/CoursePortfolio.cs" id="1_n5j48"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o5pmp"]
 bg_color = Color(8.66354e-07, 0.300587, 0.413635, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.270588, 0.560784, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_42ty7"]
+bg_color = Color(0, 0, 0, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.271173, 0.562423, 0.999989, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gq6xa"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.270588, 0.560784, 1, 1)
 
 [node name="course_portfolio" type="Control"]
 clip_contents = true
@@ -13,23 +36,27 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+script = ExtResource("1_n5j48")
 metadata/_edit_use_anchors_ = true
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="AspectRatioContainer"]
+layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="BackGround" type="Panel" parent="MarginContainer"]
+[node name="BackGround" type="Panel" parent="AspectRatioContainer/MarginContainer"]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_o5pmp")
 
-[node name="MarginContainer2" type="MarginContainer" parent="MarginContainer"]
+[node name="MarginContainer2" type="MarginContainer" parent="AspectRatioContainer/MarginContainer"]
 clip_contents = true
 layout_mode = 2
 theme_override_constants/margin_left = 24
@@ -37,25 +64,64 @@ theme_override_constants/margin_top = 24
 theme_override_constants/margin_right = 24
 theme_override_constants/margin_bottom = 24
 
-[node name="ForeGround" type="Panel" parent="MarginContainer/MarginContainer2"]
+[node name="ForeGround" type="Panel" parent="AspectRatioContainer/MarginContainer/MarginContainer2"]
 clip_contents = true
 layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_42ty7")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/MarginContainer2"]
-clip_contents = true
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="AspectRatioContainer/MarginContainer/MarginContainer2/ForeGround"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 12.0
+offset_top = 16.0
+offset_right = -12.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AspectRatioContainer/MarginContainer/MarginContainer2/ForeGround/AspectRatioContainer"]
 layout_mode = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/MarginContainer2/VBoxContainer"]
-clip_contents = true
+[node name="course" type="Label" parent="AspectRatioContainer/MarginContainer/MarginContainer2/ForeGround/AspectRatioContainer/VBoxContainer"]
 layout_mode = 2
-size_flags_vertical = 3
-alignment = 1
-
-[node name="Label" type="Label" parent="MarginContainer/MarginContainer2/VBoxContainer/HBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 50
-text = "Learn C/C++"
-horizontal_alignment = 1
+theme_override_styles/normal = SubResource("StyleBoxFlat_gq6xa")
 vertical_alignment = 1
-justification_flags = 171
-uppercase = true
+
+[node name="Label" type="Label" parent="AspectRatioContainer/MarginContainer/MarginContainer2/ForeGround/AspectRatioContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="AspectRatioContainer/MarginContainer/MarginContainer2/ForeGround/AspectRatioContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label3" type="Label" parent="AspectRatioContainer/MarginContainer/MarginContainer2/ForeGround/AspectRatioContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label4" type="Label" parent="AspectRatioContainer/MarginContainer/MarginContainer2/ForeGround/AspectRatioContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label9" type="Label" parent="AspectRatioContainer/MarginContainer/MarginContainer2/ForeGround/AspectRatioContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label5" type="Label" parent="AspectRatioContainer/MarginContainer/MarginContainer2/ForeGround/AspectRatioContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label6" type="Label" parent="AspectRatioContainer/MarginContainer/MarginContainer2/ForeGround/AspectRatioContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label7" type="Label" parent="AspectRatioContainer/MarginContainer/MarginContainer2/ForeGround/AspectRatioContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label8" type="Label" parent="AspectRatioContainer/MarginContainer/MarginContainer2/ForeGround/AspectRatioContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="professor" type="Label" parent="AspectRatioContainer/MarginContainer/MarginContainer2/ForeGround/AspectRatioContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_gq6xa")
+vertical_alignment = 1
+
+[node name="subject" type="Label" parent="AspectRatioContainer/MarginContainer/MarginContainer2/ForeGround/AspectRatioContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_gq6xa")
+vertical_alignment = 1

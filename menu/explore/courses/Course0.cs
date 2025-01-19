@@ -2,7 +2,7 @@ using System;
 using CommonTools;
 using Godot;
 
-public partial class Course1 : Tool
+public partial class Course0 : Tool
 {
     private TextureButton back;
 
@@ -31,8 +31,8 @@ public partial class Course1 : Tool
         Godot.Collections.Dictionary info = new Godot.Collections.Dictionary
         {
             { "professor", "chill_guy" },
-            { "course", "introduction to chemistry" },
-            { "subject", "chemistry" },
+            { "course", "Addition of whole numbers" },
+            { "subject", "math" },
         };
 
         return info;

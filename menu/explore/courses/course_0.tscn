@@ -1,9 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://d1rkqyh0mn64y"]
+[gd_scene load_steps=3 format=3 uid="uid://gsftsnmsvuvf"]
 
-[ext_resource type="Texture2D" uid="uid://wfuln6oak6m6" path="res://assets/X_icon.png" id="1_0j2em"]
-[ext_resource type="Script" path="res://menu/explore/courses/Course1.cs" id="1_25s3y"]
+[ext_resource type="Script" path="res://menu/explore/courses/Course0.cs" id="1_govup"]
+[ext_resource type="Texture2D" uid="uid://wfuln6oak6m6" path="res://assets/X_icon.png" id="1_ureyk"]
 
-[node name="course_1" type="Control"]
+[node name="course_0" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -11,7 +11,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_stretch_ratio = 20.0
-script = ExtResource("1_25s3y")
+script = ExtResource("1_govup")
 
 [node name="PanelContainer" type="MarginContainer" parent="."]
 layout_mode = 0
@@ -39,4 +39,4 @@ offset_left = 1136.0
 offset_right = 1152.0
 offset_bottom = 16.0
 toggle_mode = true
-texture_normal = ExtResource("1_0j2em")
+texture_normal = ExtResource("1_ureyk")

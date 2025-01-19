@@ -1,8 +1,8 @@
 using System;
-using commonTools;
+using CommonTools;
 using Godot;
 
-public partial class Themes : tool
+public partial class Themes : Tool
 {
     private TextureButton back;
     private ColorPickerButton bg_color;
@@ -21,7 +21,7 @@ public partial class Themes : tool
     {
         if (back.ButtonPressed == true)
         {
-            SwitchTo(SettingsMenu);
+            //SwitchTo(SettingsMenu);
         }
     }
 
@@ -35,9 +35,9 @@ public partial class Themes : tool
             //GD.Print(node.Name);
             if (nodes[i].Name == "BackGround")
             {
-                tool toolnode = (tool)nodes[i];
+                Tool Toolnode = (Tool)nodes[i];
                 Panel panelnode = (Panel)nodes[i];
-                toolnode.SetTheme("BgColor", color, panelnode);
+                Toolnode.SetTheme("BgColor", color, panelnode);
             }
         }*/
     }

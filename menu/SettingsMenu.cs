@@ -1,8 +1,8 @@
 using System;
-using commonTools;
+using CommonTools;
 using Godot;
 
-public partial class SettingsMenu : tool
+public partial class SettingsMenu : Tool
 {
     private TextureButton back;
     private Button themes;
@@ -24,11 +24,11 @@ public partial class SettingsMenu : tool
     {
         if (back.ButtonPressed == true)
         {
-            SwitchTo(MainMenu);
+            //SwitchTo(MainMenu);
         }
         else if (themes.ButtonPressed == true)
         {
-            SwitchTo(Themes);
+            //SwitchTo(Themes);
         }
     }
 }

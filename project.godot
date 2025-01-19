@@ -30,6 +30,8 @@ project/fbx2gltf/enabled.android=false
 [global_group]
 
 Tabs=""
+filter=""
+ButtonCourses=""
 
 [input]
 

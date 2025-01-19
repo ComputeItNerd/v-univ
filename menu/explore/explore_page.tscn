@@ -1,0 +1,523 @@
+[gd_scene load_steps=44 format=3 uid="uid://cthtmw8i085a5"]
+
+[ext_resource type="Script" path="res://menu/explore/ExplorePage.cs" id="1_smi0w"]
+[ext_resource type="Script" path="res://menu/explore/Home.cs" id="2_4gg5p"]
+[ext_resource type="Texture2D" uid="uid://wfuln6oak6m6" path="res://assets/X_icon.png" id="2_ke0ya"]
+[ext_resource type="PackedScene" uid="uid://bjgssvj2qytbe" path="res://menu/explore/courses/course_portfolio.tscn" id="3_j02hl"]
+[ext_resource type="ButtonGroup" uid="uid://bth87wpqb3b1p" path="res://menu/explore/new_button_group.tres" id="3_rajrj"]
+[ext_resource type="Script" path="res://menu/explore/Programming.cs" id="3_w66we"]
+[ext_resource type="Script" path="res://menu/explore/Buttoncourse0.cs" id="4_6pfhe"]
+[ext_resource type="Script" path="res://menu/explore/Chemistry.cs" id="4_g0wrb"]
+[ext_resource type="Script" path="res://menu/explore/Buttoncourse1.cs" id="5_7n37u"]
+[ext_resource type="Script" path="res://menu/explore/Mathematics.cs" id="5_mt48g"]
+[ext_resource type="Script" path="res://menu/explore/Philosphy.cs" id="6_tyktg"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x8iug"]
+bg_color = Color(0.19603, 0.303576, 0.343082, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mqox7"]
+bg_color = Color(0, 0.301961, 0.411765, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.270588, 0.560784, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_15xxl"]
+bg_color = Color(0.12549, 0.12549, 0.12549, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ffey6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4w178"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yoblk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f1iqo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wd6wt"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vd5mk"]
+bg_color = Color(0.12549, 0.12549, 0.12549, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_36gxl"]
+bg_color = Color(0.12549, 0.12549, 0.12549, 1)
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_6cfnb"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h1xwp"]
+bg_color = Color(0, 0.301961, 0.411765, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.270588, 0.560784, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uuigh"]
+bg_color = Color(0, 0.301961, 0.411765, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.270588, 0.560784, 1, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1hcxm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x0ppq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5c6g3"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_p110k"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_k7bx2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_c2s76"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7ifja"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mp6uh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kufwt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_airu4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qt5vr"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p57pk"]
+bg_color = Color(0, 0.301961, 0.411765, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.270588, 0.560784, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xe8tw"]
+bg_color = Color(0, 0.301961, 0.411765, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.270588, 0.560784, 1, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3vvo5"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s5a61"]
+bg_color = Color(0.144063, 0.144063, 0.144062, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_36cdd"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qykih"]
+bg_color = Color(0.12549, 0.12549, 0.12549, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x0yy2"]
+bg_color = Color(0.12549, 0.12549, 0.12549, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_prirv"]
+bg_color = Color(0.125911, 0.125911, 0.125911, 1)
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[node name="explore_page" type="Control" groups=["Tabs"]]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_smi0w")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BackGround" type="Panel" parent="MarginContainer" groups=["Tabs"]]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_x8iug")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/BackGround"]
+layout_mode = 2
+offset_left = 32.0
+offset_top = 16.0
+offset_right = 584.0
+offset_bottom = 64.0
+
+[node name="filter" type="Panel" parent="MarginContainer/BackGround/MarginContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_mqox7")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/BackGround/MarginContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/BackGround/MarginContainer/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="home" type="Button" parent="MarginContainer/BackGround/MarginContainer/MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/focus = SubResource("StyleBoxFlat_15xxl")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_ffey6")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_4w178")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_yoblk")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_f1iqo")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_wd6wt")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_vd5mk")
+theme_override_styles/normal = SubResource("StyleBoxFlat_36gxl")
+toggle_mode = true
+action_mode = 0
+button_group = SubResource("ButtonGroup_6cfnb")
+text = "Home"
+script = ExtResource("2_4gg5p")
+
+[node name="programming" type="Button" parent="MarginContainer/BackGround/MarginContainer/MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/focus = SubResource("StyleBoxFlat_15xxl")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_ffey6")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_4w178")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_yoblk")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_f1iqo")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_wd6wt")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_vd5mk")
+theme_override_styles/normal = SubResource("StyleBoxFlat_36gxl")
+toggle_mode = true
+action_mode = 0
+button_group = SubResource("ButtonGroup_6cfnb")
+text = "Programming"
+script = ExtResource("3_w66we")
+
+[node name="chemistry" type="Button" parent="MarginContainer/BackGround/MarginContainer/MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/focus = SubResource("StyleBoxFlat_15xxl")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_ffey6")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_4w178")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_yoblk")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_f1iqo")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_wd6wt")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_vd5mk")
+theme_override_styles/normal = SubResource("StyleBoxFlat_36gxl")
+toggle_mode = true
+action_mode = 0
+button_group = SubResource("ButtonGroup_6cfnb")
+text = "Chemistry"
+script = ExtResource("4_g0wrb")
+
+[node name="mathematics" type="Button" parent="MarginContainer/BackGround/MarginContainer/MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/focus = SubResource("StyleBoxFlat_15xxl")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_ffey6")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_4w178")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_yoblk")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_f1iqo")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_wd6wt")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_vd5mk")
+theme_override_styles/normal = SubResource("StyleBoxFlat_36gxl")
+toggle_mode = true
+action_mode = 0
+button_group = SubResource("ButtonGroup_6cfnb")
+text = "Mathematics"
+script = ExtResource("5_mt48g")
+
+[node name="philosphy" type="Button" parent="MarginContainer/BackGround/MarginContainer/MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/focus = SubResource("StyleBoxFlat_15xxl")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_ffey6")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_4w178")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_yoblk")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_f1iqo")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_wd6wt")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_vd5mk")
+theme_override_styles/normal = SubResource("StyleBoxFlat_36gxl")
+toggle_mode = true
+action_mode = 0
+button_group = SubResource("ButtonGroup_6cfnb")
+text = "Philosophy"
+script = ExtResource("6_tyktg")
+
+[node name="MarginContainer2" type="MarginContainer" parent="MarginContainer/BackGround"]
+layout_mode = 0
+offset_left = 600.0
+offset_top = 16.0
+offset_right = 1008.0
+offset_bottom = 64.0
+
+[node name="search" type="Panel" parent="MarginContainer/BackGround/MarginContainer2"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_h1xwp")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/BackGround/MarginContainer2/search"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="LineEdit" type="LineEdit" parent="MarginContainer/BackGround/MarginContainer2/search/MarginContainer"]
+layout_mode = 2
+placeholder_text = "Search Course"
+max_length = 42
+
+[node name="MarginContainer4" type="MarginContainer" parent="MarginContainer/BackGround"]
+layout_mode = 0
+offset_left = 1040.0
+offset_top = 16.0
+offset_right = 1088.0
+offset_bottom = 64.0
+
+[node name="Panel" type="Panel" parent="MarginContainer/BackGround/MarginContainer4"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_uuigh")
+
+[node name="account_details" type="Button" parent="MarginContainer/BackGround/MarginContainer4/Panel"]
+layout_mode = 0
+offset_top = -1.0
+offset_right = 48.0
+offset_bottom = 49.0
+theme_override_colors/font_color = Color(0, 0, 0.470588, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 34
+theme_override_styles/focus = SubResource("StyleBoxEmpty_1hcxm")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_x0ppq")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_5c6g3")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_p110k")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_k7bx2")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_c2s76")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_7ifja")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_mp6uh")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_kufwt")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_airu4")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_qt5vr")
+toggle_mode = true
+action_mode = 0
+text = "A"
+
+[node name="MarginContainer5" type="MarginContainer" parent="MarginContainer/BackGround"]
+layout_mode = 0
+offset_left = 1112.0
+offset_top = 8.0
+offset_right = 1144.0
+offset_bottom = 40.0
+
+[node name="back" type="TextureButton" parent="MarginContainer/BackGround/MarginContainer5"]
+layout_mode = 2
+texture_normal = ExtResource("2_ke0ya")
+texture_pressed = ExtResource("2_ke0ya")
+texture_hover = ExtResource("2_ke0ya")
+texture_disabled = ExtResource("2_ke0ya")
+texture_focused = ExtResource("2_ke0ya")
+stretch_mode = 0
+metadata/_edit_lock_ = true
+
+[node name="MarginContainer3" type="MarginContainer" parent="MarginContainer/BackGround"]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 80.0
+offset_right = 1096.0
+offset_bottom = 616.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/BackGround/MarginContainer3"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="HSplitContainer" type="HSplitContainer" parent="MarginContainer/BackGround/MarginContainer3/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+split_offset = 458
+
+[node name="MarginContainer3" type="MarginContainer" parent="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Panel" type="Panel" parent="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_p57pk")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = -95
+theme_override_constants/margin_bottom = 15
+
+[node name="course" type="Panel" parent="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel/HBoxContainer/MarginContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_xe8tw")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel/HBoxContainer/MarginContainer/course"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="course_selection" type="VBoxContainer" parent="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel/HBoxContainer/MarginContainer/course/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Buttoncourse_0" type="Button" parent="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel/HBoxContainer/MarginContainer/course/ScrollContainer/course_selection" groups=["ButtonCourses"]]
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+toggle_mode = true
+action_mode = 0
+button_group = ExtResource("3_rajrj")
+text = "Addition of Whole Numbers"
+script = ExtResource("4_6pfhe")
+
+[node name="Buttoncourse_1" type="Button" parent="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel/HBoxContainer/MarginContainer/course/ScrollContainer/course_selection" groups=["ButtonCourses"]]
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+toggle_mode = true
+action_mode = 0
+button_group = ExtResource("3_rajrj")
+text = "Introduction to Chemistry"
+script = ExtResource("5_7n37u")
+
+[node name="MarginContainer2" type="MarginContainer" parent="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 110
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="portfolio" type="Panel" parent="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel/HBoxContainer/MarginContainer2"]
+layout_mode = 2
+
+[node name="course_portfolio" parent="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel/HBoxContainer/MarginContainer2/portfolio" instance=ExtResource("3_j02hl")]
+layout_mode = 1
+
+[node name="MarginContainer6" type="MarginContainer" parent="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="account" type="Panel" parent="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer6"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_3vvo5")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer6/account"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer6/account/MarginContainer"]
+layout_mode = 2
+
+[node name="account_settings" type="Button" parent="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer6/account/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/focus = SubResource("StyleBoxFlat_s5a61")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_ffey6")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_4w178")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_yoblk")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_36cdd")
+theme_override_styles/hover = SubResource("StyleBoxFlat_qykih")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_wd6wt")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_x0yy2")
+theme_override_styles/normal = SubResource("StyleBoxFlat_prirv")
+toggle_mode = true
+action_mode = 0
+text = "Account Settings"
+autowrap_mode = 1
+clip_text = true
+
+[node name="settings" type="Button" parent="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer6/account/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/focus = SubResource("StyleBoxFlat_s5a61")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_ffey6")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_4w178")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_yoblk")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_36cdd")
+theme_override_styles/hover = SubResource("StyleBoxFlat_qykih")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_wd6wt")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_x0yy2")
+theme_override_styles/normal = SubResource("StyleBoxFlat_prirv")
+toggle_mode = true
+text = "Settings"
+autowrap_mode = 1
+clip_text = true
+
+[node name="about" type="Button" parent="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer6/account/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/focus = SubResource("StyleBoxFlat_s5a61")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_ffey6")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_4w178")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_yoblk")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_36cdd")
+theme_override_styles/hover = SubResource("StyleBoxFlat_qykih")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_wd6wt")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_x0yy2")
+theme_override_styles/normal = SubResource("StyleBoxFlat_prirv")
+toggle_mode = true
+text = "About"
+autowrap_mode = 1
+clip_text = true
+
+[connection signal="tree_entered" from="." to="." method="_on_tree_entered"]
+[connection signal="toggled" from="MarginContainer/BackGround/MarginContainer/MarginContainer/HBoxContainer/home" to="MarginContainer/BackGround/MarginContainer/MarginContainer/HBoxContainer/home" method="_on_toggled"]
+[connection signal="toggled" from="MarginContainer/BackGround/MarginContainer/MarginContainer/HBoxContainer/programming" to="MarginContainer/BackGround/MarginContainer/MarginContainer/HBoxContainer/programming" method="_on_toggled"]
+[connection signal="toggled" from="MarginContainer/BackGround/MarginContainer/MarginContainer/HBoxContainer/chemistry" to="MarginContainer/BackGround/MarginContainer/MarginContainer/HBoxContainer/chemistry" method="_on_toggled"]
+[connection signal="toggled" from="MarginContainer/BackGround/MarginContainer/MarginContainer/HBoxContainer/mathematics" to="MarginContainer/BackGround/MarginContainer/MarginContainer/HBoxContainer/mathematics" method="_on_toggled"]
+[connection signal="toggled" from="MarginContainer/BackGround/MarginContainer/MarginContainer/HBoxContainer/philosphy" to="MarginContainer/BackGround/MarginContainer/MarginContainer/HBoxContainer/philosphy" method="_on_toggled"]
+[connection signal="button_down" from="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel/HBoxContainer/MarginContainer/course/ScrollContainer/course_selection/Buttoncourse_0" to="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel/HBoxContainer/MarginContainer/course/ScrollContainer/course_selection/Buttoncourse_0" method="_on_button_down"]
+[connection signal="button_up" from="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel/HBoxContainer/MarginContainer/course/ScrollContainer/course_selection/Buttoncourse_0" to="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel/HBoxContainer/MarginContainer/course/ScrollContainer/course_selection/Buttoncourse_0" method="_on_button_up"]
+[connection signal="button_down" from="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel/HBoxContainer/MarginContainer/course/ScrollContainer/course_selection/Buttoncourse_1" to="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel/HBoxContainer/MarginContainer/course/ScrollContainer/course_selection/Buttoncourse_1" method="_on_button_down"]
+[connection signal="button_up" from="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel/HBoxContainer/MarginContainer/course/ScrollContainer/course_selection/Buttoncourse_1" to="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel/HBoxContainer/MarginContainer/course/ScrollContainer/course_selection/Buttoncourse_1" method="_on_button_up"]
