@@ -5,7 +5,9 @@ V-univ stands for Virtual University where it offers courses that are taught by 
 
 ## Specifics
 Target Platform: Desktop and Mobile
+
 Target OS: Wondows and Android
+
 Genre: Education
 
 ## How to contribute
