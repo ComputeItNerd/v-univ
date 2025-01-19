@@ -3,6 +3,11 @@
 # v-univ
 V-univ stands for Virtual University where it offers courses that are taught by virtual AI professors.
 
+## Specifics
+Target Platform: Desktop and Mobile
+Target OS: Wondows and Android
+Genre: Education
+
 ## How to contribute
 If you don't have Godot, you can go to [this link](https://github.com/godotengine/godot/releases/download/4.3-stable/Godot_v4.3-stable_mono_win64.zip).
 
