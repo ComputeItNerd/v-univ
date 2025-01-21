@@ -23,7 +23,7 @@ public partial class Course0 : Tool
 
     private String GetTag()
     {
-        return "math";
+        return "mathematics";
     }
 
     private Godot.Collections.Dictionary GetCourseInfo()

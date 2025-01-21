@@ -5,6 +5,11 @@ public partial class Buttoncourse1 : Button
 {
     private String Tag = "chemistry";
 
+    private String GetCourseName()
+    {
+        return Text;
+    }
+
     private void _on_button_up()
     {
         Node Parent = FindParent("explore_page");
@@ -21,7 +26,7 @@ public partial class Buttoncourse1 : Button
     {
         if (Tag == tag || tag == "all")
         {
-            GD.Print(Tag);
+            //GD.Print(Tag);
             Hide();
         }
     }
@@ -30,7 +35,7 @@ public partial class Buttoncourse1 : Button
     {
         if (Tag == tag || tag == "all")
         {
-            GD.Print(Tag);
+            //GD.Print(Tag);
             Show();
         }
     }

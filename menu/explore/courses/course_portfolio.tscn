@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://bjgssvj2qytbe"]
+[gd_scene load_steps=4 format=3 uid="uid://bjgssvj2qytbe"]
 
 [ext_resource type="Script" path="res://menu/explore/courses/CoursePortfolio.cs" id="1_n5j48"]
 
@@ -9,14 +9,7 @@ border_width_top = 2
 border_width_right = 2
 border_width_bottom = 2
 border_color = Color(0.270588, 0.560784, 1, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_42ty7"]
-bg_color = Color(0, 0, 0, 0)
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-border_color = Color(0.271173, 0.562423, 0.999989, 1)
+shadow_size = 5
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gq6xa"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
@@ -67,61 +60,51 @@ theme_override_constants/margin_bottom = 24
 [node name="ForeGround" type="Panel" parent="AspectRatioContainer/MarginContainer/MarginContainer2"]
 clip_contents = true
 layout_mode = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_42ty7")
 
-[node name="AspectRatioContainer" type="AspectRatioContainer" parent="AspectRatioContainer/MarginContainer/MarginContainer2/ForeGround"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 12.0
-offset_top = 16.0
-offset_right = -12.0
-offset_bottom = -16.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="VBoxContainer" type="VBoxContainer" parent="AspectRatioContainer/MarginContainer/MarginContainer2/ForeGround/AspectRatioContainer"]
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="AspectRatioContainer/MarginContainer/MarginContainer2"]
 layout_mode = 2
 
-[node name="course" type="Label" parent="AspectRatioContainer/MarginContainer/MarginContainer2/ForeGround/AspectRatioContainer/VBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="AspectRatioContainer/MarginContainer/MarginContainer2/AspectRatioContainer"]
+layout_mode = 2
+
+[node name="course" type="Label" parent="AspectRatioContainer/MarginContainer/MarginContainer2/AspectRatioContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_styles/normal = SubResource("StyleBoxFlat_gq6xa")
 vertical_alignment = 1
 
-[node name="Label" type="Label" parent="AspectRatioContainer/MarginContainer/MarginContainer2/ForeGround/AspectRatioContainer/VBoxContainer"]
+[node name="Label" type="Label" parent="AspectRatioContainer/MarginContainer/MarginContainer2/AspectRatioContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Label2" type="Label" parent="AspectRatioContainer/MarginContainer/MarginContainer2/ForeGround/AspectRatioContainer/VBoxContainer"]
+[node name="Label2" type="Label" parent="AspectRatioContainer/MarginContainer/MarginContainer2/AspectRatioContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Label3" type="Label" parent="AspectRatioContainer/MarginContainer/MarginContainer2/ForeGround/AspectRatioContainer/VBoxContainer"]
+[node name="Label3" type="Label" parent="AspectRatioContainer/MarginContainer/MarginContainer2/AspectRatioContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Label4" type="Label" parent="AspectRatioContainer/MarginContainer/MarginContainer2/ForeGround/AspectRatioContainer/VBoxContainer"]
+[node name="Label4" type="Label" parent="AspectRatioContainer/MarginContainer/MarginContainer2/AspectRatioContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Label9" type="Label" parent="AspectRatioContainer/MarginContainer/MarginContainer2/ForeGround/AspectRatioContainer/VBoxContainer"]
+[node name="Label9" type="Label" parent="AspectRatioContainer/MarginContainer/MarginContainer2/AspectRatioContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Label5" type="Label" parent="AspectRatioContainer/MarginContainer/MarginContainer2/ForeGround/AspectRatioContainer/VBoxContainer"]
+[node name="Label5" type="Label" parent="AspectRatioContainer/MarginContainer/MarginContainer2/AspectRatioContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Label6" type="Label" parent="AspectRatioContainer/MarginContainer/MarginContainer2/ForeGround/AspectRatioContainer/VBoxContainer"]
+[node name="Label6" type="Label" parent="AspectRatioContainer/MarginContainer/MarginContainer2/AspectRatioContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Label7" type="Label" parent="AspectRatioContainer/MarginContainer/MarginContainer2/ForeGround/AspectRatioContainer/VBoxContainer"]
+[node name="Label7" type="Label" parent="AspectRatioContainer/MarginContainer/MarginContainer2/AspectRatioContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Label8" type="Label" parent="AspectRatioContainer/MarginContainer/MarginContainer2/ForeGround/AspectRatioContainer/VBoxContainer"]
+[node name="Label8" type="Label" parent="AspectRatioContainer/MarginContainer/MarginContainer2/AspectRatioContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="professor" type="Label" parent="AspectRatioContainer/MarginContainer/MarginContainer2/ForeGround/AspectRatioContainer/VBoxContainer"]
+[node name="professor" type="Label" parent="AspectRatioContainer/MarginContainer/MarginContainer2/AspectRatioContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_styles/normal = SubResource("StyleBoxFlat_gq6xa")
 vertical_alignment = 1
 
-[node name="subject" type="Label" parent="AspectRatioContainer/MarginContainer/MarginContainer2/ForeGround/AspectRatioContainer/VBoxContainer"]
+[node name="subject" type="Label" parent="AspectRatioContainer/MarginContainer/MarginContainer2/AspectRatioContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_styles/normal = SubResource("StyleBoxFlat_gq6xa")
 vertical_alignment = 1

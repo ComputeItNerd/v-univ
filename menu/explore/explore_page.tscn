@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=3 uid="uid://cthtmw8i085a5"]
+[gd_scene load_steps=59 format=3 uid="uid://cthtmw8i085a5"]
 
 [ext_resource type="Script" path="res://menu/explore/ExplorePage.cs" id="1_smi0w"]
 [ext_resource type="Script" path="res://menu/explore/Home.cs" id="2_4gg5p"]
@@ -23,8 +23,7 @@ border_width_right = 2
 border_width_bottom = 2
 border_color = Color(0.270588, 0.560784, 1, 1)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_15xxl"]
-bg_color = Color(0.12549, 0.12549, 0.12549, 1)
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3mera"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ffey6"]
 
@@ -34,17 +33,41 @@ bg_color = Color(0.12549, 0.12549, 0.12549, 1)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f1iqo"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8gojg"]
+bg_color = Color(0, 0.403922, 0.423529, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 15
+
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wd6wt"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vd5mk"]
-bg_color = Color(0.12549, 0.12549, 0.12549, 1)
+bg_color = Color(5.77569e-07, 0.40271, 0.423278, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.270588, 0.560784, 1, 1)
 corner_radius_top_left = 20
 corner_radius_top_right = 20
 corner_radius_bottom_right = 20
 corner_radius_bottom_left = 20
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_36gxl"]
-bg_color = Color(0.12549, 0.12549, 0.12549, 1)
+bg_color = Color(0, 0.403922, 0.423529, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.270588, 0.560784, 1, 1)
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+shadow_size = 3
 
 [sub_resource type="ButtonGroup" id="ButtonGroup_6cfnb"]
 
@@ -68,30 +91,40 @@ corner_radius_top_right = 50
 corner_radius_bottom_right = 50
 corner_radius_bottom_left = 50
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1hcxm"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wy8l0"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x0ppq"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5c6g3"]
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_p110k"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vjkhh"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_k7bx2"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_77hyh"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_c2s76"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7ifja"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wlvxb"]
+bg_color = Color(0, 0.301961, 0.411765, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mp6uh"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kufwt"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ufq0p"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_airu4"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_iayjr"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qt5vr"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_j64ll"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p57pk"]
-bg_color = Color(0, 0.301961, 0.411765, 1)
+bg_color = Color(1, 1, 1, 1)
 border_width_left = 2
 border_width_top = 2
 border_width_right = 2
@@ -105,35 +138,129 @@ border_width_top = 2
 border_width_right = 2
 border_width_bottom = 2
 border_color = Color(0.270588, 0.560784, 1, 1)
+shadow_size = 5
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3vvo5"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_87epm"]
+bg_color = Color(0, 0.403922, 0.423529, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.266667, 0.556863, 0.992157, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s5a61"]
-bg_color = Color(0.144063, 0.144063, 0.144062, 1)
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8rost"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t3kwb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_psevd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g5rpb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pbfbr"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3rto8"]
+bg_color = Color(0, 0.403922, 0.423529, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
 corner_radius_top_left = 20
 corner_radius_top_right = 20
 corner_radius_bottom_right = 20
 corner_radius_bottom_left = 20
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_clhys"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3glyc"]
+bg_color = Color(0, 0.403922, 0.423529, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.270588, 0.560784, 1, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rtxf0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bp2m7"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+bg_color = Color(0, 0.403922, 0.423529, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.270588, 0.560784, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r8wgb"]
+bg_color = Color(0, 0.301961, 0.411765, 1)
+shadow_size = 6
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3vvo5"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s5a61"]
+bg_color = Color(0.14902, 0.482353, 0.498039, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jbks2"]
+
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_36cdd"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qykih"]
-bg_color = Color(0.12549, 0.12549, 0.12549, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a323h"]
+bg_color = Color(0.0705882, 0.447059, 0.462745, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
 corner_radius_top_left = 20
 corner_radius_top_right = 20
 corner_radius_bottom_right = 20
 corner_radius_bottom_left = 20
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x0yy2"]
-bg_color = Color(0.12549, 0.12549, 0.12549, 1)
+bg_color = Color(0.0705882, 0.447059, 0.462745, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
 corner_radius_top_left = 20
 corner_radius_top_right = 20
 corner_radius_bottom_right = 20
 corner_radius_bottom_left = 20
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pbjlj"]
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_prirv"]
-bg_color = Color(0.125911, 0.125911, 0.125911, 1)
-border_color = Color(1, 1, 1, 1)
+bg_color = Color(0.32549, 0.580392, 0.592157, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
 border_blend = true
 corner_radius_top_left = 20
 corner_radius_top_right = 20
@@ -186,11 +313,12 @@ theme_override_constants/separation = 10
 [node name="home" type="Button" parent="MarginContainer/BackGround/MarginContainer/MarginContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_styles/focus = SubResource("StyleBoxFlat_15xxl")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_3mera")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_ffey6")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_4w178")
 theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_yoblk")
 theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_f1iqo")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8gojg")
 theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_wd6wt")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_vd5mk")
 theme_override_styles/normal = SubResource("StyleBoxFlat_36gxl")
@@ -203,11 +331,12 @@ script = ExtResource("2_4gg5p")
 [node name="programming" type="Button" parent="MarginContainer/BackGround/MarginContainer/MarginContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_styles/focus = SubResource("StyleBoxFlat_15xxl")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_3mera")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_ffey6")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_4w178")
 theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_yoblk")
 theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_f1iqo")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8gojg")
 theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_wd6wt")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_vd5mk")
 theme_override_styles/normal = SubResource("StyleBoxFlat_36gxl")
@@ -220,11 +349,12 @@ script = ExtResource("3_w66we")
 [node name="chemistry" type="Button" parent="MarginContainer/BackGround/MarginContainer/MarginContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_styles/focus = SubResource("StyleBoxFlat_15xxl")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_3mera")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_ffey6")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_4w178")
 theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_yoblk")
 theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_f1iqo")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8gojg")
 theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_wd6wt")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_vd5mk")
 theme_override_styles/normal = SubResource("StyleBoxFlat_36gxl")
@@ -237,11 +367,12 @@ script = ExtResource("4_g0wrb")
 [node name="mathematics" type="Button" parent="MarginContainer/BackGround/MarginContainer/MarginContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_styles/focus = SubResource("StyleBoxFlat_15xxl")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_3mera")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_ffey6")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_4w178")
 theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_yoblk")
 theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_f1iqo")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8gojg")
 theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_wd6wt")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_vd5mk")
 theme_override_styles/normal = SubResource("StyleBoxFlat_36gxl")
@@ -254,11 +385,12 @@ script = ExtResource("5_mt48g")
 [node name="philosphy" type="Button" parent="MarginContainer/BackGround/MarginContainer/MarginContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_styles/focus = SubResource("StyleBoxFlat_15xxl")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_3mera")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_ffey6")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_4w178")
 theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_yoblk")
 theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_f1iqo")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8gojg")
 theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_wd6wt")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_vd5mk")
 theme_override_styles/normal = SubResource("StyleBoxFlat_36gxl")
@@ -291,10 +423,11 @@ theme_override_constants/margin_top = 5
 theme_override_constants/margin_right = 5
 theme_override_constants/margin_bottom = 5
 
-[node name="LineEdit" type="LineEdit" parent="MarginContainer/BackGround/MarginContainer2/search/MarginContainer"]
+[node name="searchBar" type="LineEdit" parent="MarginContainer/BackGround/MarginContainer2/search/MarginContainer"]
 layout_mode = 2
 placeholder_text = "Search Course"
 max_length = 42
+clear_button_enabled = true
 
 [node name="MarginContainer4" type="MarginContainer" parent="MarginContainer/BackGround"]
 layout_mode = 0
@@ -312,20 +445,25 @@ layout_mode = 0
 offset_top = -1.0
 offset_right = 48.0
 offset_bottom = 49.0
+theme_override_colors/font_disabled_color = Color(0, 0.00392157, 0.470588, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0.470588, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0.470588, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0.470588, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0.470588, 1)
 theme_override_colors/font_color = Color(0, 0, 0.470588, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 34
-theme_override_styles/focus = SubResource("StyleBoxEmpty_1hcxm")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_wy8l0")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_x0ppq")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_5c6g3")
-theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_p110k")
-theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_k7bx2")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_vjkhh")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_77hyh")
 theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_c2s76")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_7ifja")
+theme_override_styles/hover = SubResource("StyleBoxFlat_wlvxb")
 theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_mp6uh")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_kufwt")
-theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_airu4")
-theme_override_styles/normal = SubResource("StyleBoxEmpty_qt5vr")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ufq0p")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_iayjr")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_j64ll")
 toggle_mode = true
 action_mode = 0
 text = "A"
@@ -361,7 +499,8 @@ theme_override_constants/separation = 10
 [node name="HSplitContainer" type="HSplitContainer" parent="MarginContainer/BackGround/MarginContainer3/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-split_offset = 458
+split_offset = 455
+dragger_visibility = 1
 
 [node name="MarginContainer3" type="MarginContainer" parent="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer"]
 layout_mode = 2
@@ -378,14 +517,13 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/separation = 0
 
 [node name="MarginContainer" type="MarginContainer" parent="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_constants/margin_left = 15
 theme_override_constants/margin_top = 15
-theme_override_constants/margin_right = -95
+theme_override_constants/margin_right = -80
 theme_override_constants/margin_bottom = 15
 
 [node name="course" type="Panel" parent="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel/HBoxContainer/MarginContainer"]
@@ -397,6 +535,10 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 17.0
+offset_top = 17.0
+offset_right = -19.0
+offset_bottom = -17.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -409,6 +551,17 @@ size_flags_vertical = 3
 visible = false
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_styles/focus = SubResource("StyleBoxFlat_87epm")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_8rost")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_t3kwb")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_psevd")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_g5rpb")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_pbfbr")
+theme_override_styles/hover = SubResource("StyleBoxFlat_3rto8")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_clhys")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_3glyc")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_rtxf0")
+theme_override_styles/normal = SubResource("StyleBoxFlat_bp2m7")
 toggle_mode = true
 action_mode = 0
 button_group = ExtResource("3_rajrj")
@@ -419,6 +572,17 @@ script = ExtResource("4_6pfhe")
 visible = false
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_styles/focus = SubResource("StyleBoxFlat_87epm")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_8rost")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_t3kwb")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_psevd")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_g5rpb")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_pbfbr")
+theme_override_styles/hover = SubResource("StyleBoxFlat_3rto8")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_clhys")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_3glyc")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_rtxf0")
+theme_override_styles/normal = SubResource("StyleBoxFlat_bp2m7")
 toggle_mode = true
 action_mode = 0
 button_group = ExtResource("3_rajrj")
@@ -428,19 +592,24 @@ script = ExtResource("5_7n37u")
 [node name="MarginContainer2" type="MarginContainer" parent="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_constants/margin_left = 110
+theme_override_constants/margin_left = 87
 theme_override_constants/margin_top = 15
 theme_override_constants/margin_right = 15
 theme_override_constants/margin_bottom = 15
 
 [node name="portfolio" type="Panel" parent="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel/HBoxContainer/MarginContainer2"]
 layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_r8wgb")
 
 [node name="course_portfolio" parent="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel/HBoxContainer/MarginContainer2/portfolio" instance=ExtResource("3_j02hl")]
 layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0191847
+anchor_top = 0.0177866
+anchor_right = 0.978417
+offset_bottom = -97.0
 
 [node name="MarginContainer6" type="MarginContainer" parent="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer"]
-visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 
@@ -466,10 +635,12 @@ theme_override_styles/focus = SubResource("StyleBoxFlat_s5a61")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_ffey6")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_4w178")
 theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_yoblk")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_jbks2")
 theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_36cdd")
-theme_override_styles/hover = SubResource("StyleBoxFlat_qykih")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a323h")
 theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_wd6wt")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_x0yy2")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_pbjlj")
 theme_override_styles/normal = SubResource("StyleBoxFlat_prirv")
 toggle_mode = true
 action_mode = 0
@@ -484,10 +655,12 @@ theme_override_styles/focus = SubResource("StyleBoxFlat_s5a61")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_ffey6")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_4w178")
 theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_yoblk")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_jbks2")
 theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_36cdd")
-theme_override_styles/hover = SubResource("StyleBoxFlat_qykih")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a323h")
 theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_wd6wt")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_x0yy2")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_pbjlj")
 theme_override_styles/normal = SubResource("StyleBoxFlat_prirv")
 toggle_mode = true
 text = "Settings"
@@ -501,10 +674,12 @@ theme_override_styles/focus = SubResource("StyleBoxFlat_s5a61")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_ffey6")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_4w178")
 theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_yoblk")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_jbks2")
 theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_36cdd")
-theme_override_styles/hover = SubResource("StyleBoxFlat_qykih")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a323h")
 theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_wd6wt")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_x0yy2")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_pbjlj")
 theme_override_styles/normal = SubResource("StyleBoxFlat_prirv")
 toggle_mode = true
 text = "About"
@@ -519,5 +694,6 @@ clip_text = true
 [connection signal="toggled" from="MarginContainer/BackGround/MarginContainer/MarginContainer/HBoxContainer/philosphy" to="MarginContainer/BackGround/MarginContainer/MarginContainer/HBoxContainer/philosphy" method="_on_toggled"]
 [connection signal="button_down" from="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel/HBoxContainer/MarginContainer/course/ScrollContainer/course_selection/Buttoncourse_0" to="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel/HBoxContainer/MarginContainer/course/ScrollContainer/course_selection/Buttoncourse_0" method="_on_button_down"]
 [connection signal="button_up" from="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel/HBoxContainer/MarginContainer/course/ScrollContainer/course_selection/Buttoncourse_0" to="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel/HBoxContainer/MarginContainer/course/ScrollContainer/course_selection/Buttoncourse_0" method="_on_button_up"]
+[connection signal="tree_entered" from="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel/HBoxContainer/MarginContainer/course/ScrollContainer/course_selection/Buttoncourse_0" to="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel/HBoxContainer/MarginContainer/course/ScrollContainer/course_selection/Buttoncourse_0" method="_on_tree_entered"]
 [connection signal="button_down" from="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel/HBoxContainer/MarginContainer/course/ScrollContainer/course_selection/Buttoncourse_1" to="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel/HBoxContainer/MarginContainer/course/ScrollContainer/course_selection/Buttoncourse_1" method="_on_button_down"]
 [connection signal="button_up" from="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel/HBoxContainer/MarginContainer/course/ScrollContainer/course_selection/Buttoncourse_1" to="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel/HBoxContainer/MarginContainer/course/ScrollContainer/course_selection/Buttoncourse_1" method="_on_button_up"]

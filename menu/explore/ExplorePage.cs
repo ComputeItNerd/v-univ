@@ -11,13 +11,13 @@ public partial class ExplorePage : Tool
     private Button AccountDetails;
     private VBoxContainer Course_Select;
     private Control CourseProfile;
+    private LineEdit SearchBar;
 
     private MarginContainer TopRightCorner;
 
     // Called when the node enters the scene tree for the first time.
     public override void _Ready()
     {
-        GD.Print($"Node added: {Name}");
         Back = GetNode<TextureButton>("MarginContainer/BackGround/MarginContainer5/back");
         AccountDetails = GetNode<Button>(
             "MarginContainer/BackGround/MarginContainer4/Panel/account_details"
@@ -34,20 +34,49 @@ public partial class ExplorePage : Tool
         CourseProfile = GetNode<Control>(
             "MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel/HBoxContainer/MarginContainer2/portfolio/course_portfolio"
         );
+        SearchBar = GetNode<LineEdit>(
+            "MarginContainer/BackGround/MarginContainer2/search/MarginContainer/searchBar"
+        );
         AccountDetails.Toggled += OpenPanel;
         AccountSettings.Pressed += SwitchTab;
+
+        SearchBar.TextChanged += (new_text) => SearchTag(new_text);
+
+        GetTree().CallGroup("ButtonCourses", "CourseShow", "all");
     }
 
     // Called every frame. 'delta' is the elapsed time since the previous frame.
-    public override void _Process(double delta)
+    public override void _Process(double delta) { }
+
+    private void SearchTag(String new_text)
     {
-        //GD.Print(AccountDetails.ButtonPressed);
+        String input = new_text.Capitalize();
+        int CourseCount = Course_Select.GetChildCount();
+        for (int i = 0; i < CourseCount; i++)
+        {
+            Button course = (Button)Course_Select.GetChild(i);
+            String CourseName = (String)course.Call("GetCourseName");
+            String CourseNameCapitalized = CourseName.Capitalize();
+            if (CourseNameCapitalized.Contains(input))
+            {
+                course.Show();
+                GD.Print(course.Call("GetCourseName"));
+            }
+            else
+            {
+                course.Hide();
+            }
+        }
     }
 
     private void SetCourse(String course)
     {
         var file = (PackedScene)ResourceLoader.Load($"res://menu/explore/courses/{course}.tscn");
         Node instanced = file.Instantiate();
+        if (!instanced.HasMethod("GetTag"))
+        {
+            GD.PushError($"Given path {course} is not a course file.");
+        }
 
         var dict = instanced.Call("GetCourseInfo");
         CourseProfile.Call("DisplayInformation", dict);

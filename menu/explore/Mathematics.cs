@@ -7,11 +7,11 @@ public partial class Mathematics : Button
     {
         if (toggle)
         {
-            GetTree().CallGroup("ButtonCourses", "CourseShow", "math");
+            GetTree().CallGroup("ButtonCourses", "CourseShow", "mathematics");
         }
         else
         {
-            GetTree().CallGroup("ButtonCourses", "CourseHide", "math");
+            GetTree().CallGroup("ButtonCourses", "CourseHide", "mathematics");
         }
     }
 }

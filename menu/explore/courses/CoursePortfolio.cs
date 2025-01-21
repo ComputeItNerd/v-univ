@@ -11,7 +11,7 @@ public partial class CoursePortfolio : Tool
     public override void _Ready()
     {
         Display = GetNode<VBoxContainer>(
-            "AspectRatioContainer/MarginContainer/MarginContainer2/ForeGround/AspectRatioContainer/VBoxContainer"
+            "AspectRatioContainer/MarginContainer/MarginContainer2/AspectRatioContainer/VBoxContainer"
         );
     }
 
