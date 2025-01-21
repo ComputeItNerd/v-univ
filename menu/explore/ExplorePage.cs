@@ -60,7 +60,6 @@ public partial class ExplorePage : Tool
             if (CourseNameCapitalized.Contains(input))
             {
                 course.Show();
-                GD.Print(course.Call("GetCourseName"));
             }
             else
             {
