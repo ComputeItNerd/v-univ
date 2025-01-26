@@ -1,7 +1,7 @@
 # English
 
 # v-univ
-V-univ stands for Virtual University where it offers courses that are taught by virtual AI professors.
+V-univ stands for Virtual University where it offers courses that are taught by virtual AI professors or you could create one yourself.
 
 ## Specifics
 Target Platform: Desktop and Mobile
@@ -27,29 +27,6 @@ The core principle of this project is to provide courses that have AI as teacher
 ## I don't know how to code?
 Reach out to the group admins so they can teach you.
 
----
-
-# Tagalog
-
-# v-univ
-Ang v-univ ay nangangahulugang Virtual University kung saan nag-aalok ito ng mga kurso na itinuturo ng virtual na AI na mga propesor.
-
-## Paano mag-ambag
-Kung wala kang Godot, maaari kang pumunta sa [link na ito](https://github.com/godotengine/godot/releases/download/4.3-stable/Godot_v4.3-stable_mono_win64.zip).
-
-Pagkatapos mag-download, maaari mong i-click ang .zip file at i-extract ito.
-
-## Walang Code Editor
-Ang video na [ito](https://youtu.be/yr6IzOGoMsQ) ay nagpapakita ng direktang paraan ng pag-ambag sa pamamagitan ng direktang pagbabago ng code ng proyekto sa GitHub webpage.
-
-## Visual Studio o VSCode
-Kung gumagamit ka ng Visual Studio Code, maaari mong sundan ang tutorial na [ito](https://youtu.be/LfrzGQimd4U).
-
-## Ano ang maaari kong gawin upang makatulong?
-Ang pangunahing prinsipyo ng proyektong ito ay magbigay ng mga kurso na ang guro ay AI. Ang mga virtual na guro ay hindi konektado sa anumang LLM. Ibig sabihin, sila ay hardcoded. Maaari kang magdagdag ng karagdagang mga tampok, baguhin ang disenyo, o magdagdag ng sarili mong ideya.
-
-## Hindi ko alam kung paano mag-code?
-Makipag-ugnayan sa mga admin ng grupo upang turuan ka nila.
 
 # Project Progress
 ![Screenshot 2025-01-11 061213](https://github.com/user-attachments/assets/e4150a85-db5e-4b60-9c39-559a0b8b0e73)
