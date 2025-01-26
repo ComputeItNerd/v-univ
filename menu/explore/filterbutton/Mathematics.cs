@@ -15,4 +15,10 @@ public partial class Mathematics : Button
             GetTree().CallGroup("ButtonCourses", "CourseHide", "mathematics");
         }
     }
+
+    private void Unpress()
+    {
+        ButtonPressed = false;
+        GetTree().CallGroup("ButtonCourses", "CourseHide", "all");
+    }
 }

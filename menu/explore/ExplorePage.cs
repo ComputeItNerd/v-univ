@@ -2,7 +2,7 @@ using System;
 using CommonTools;
 using Godot;
 
-public partial class ExplorePage : Tool
+public partial class ExplorePage : Control
 {
     private TextureButton Back;
     private Button AccountSettings;
@@ -12,6 +12,7 @@ public partial class ExplorePage : Tool
     private VBoxContainer Course_Select;
     private Control CourseProfile;
     private LineEdit SearchBar;
+    private HBoxContainer Filters;
 
     private MarginContainer TopRightCorner;
 
@@ -37,17 +38,42 @@ public partial class ExplorePage : Tool
         SearchBar = GetNode<LineEdit>(
             "MarginContainer/BackGround/MarginContainer2/search/MarginContainer/searchBar"
         );
-        AccountDetails.Toggled += OpenPanel;
-        AccountSettings.Pressed += SwitchTab;
+        Filters = GetNode<HBoxContainer>(
+            "MarginContainer/BackGround/MarginContainer/MarginContainer/HBoxContainer"
+        );
+        //AccountDetails.Toggled += OpenPanel;
+        //AccountSettings.Pressed += SwitchTab;
 
         SearchBar.TextChanged += (new_text) => SearchTag(new_text);
+        SearchBar.FocusEntered += () => SearchActive();
+        SearchBar.FocusExited += () => SearchInActive();
+        SearchBar.TextChangeRejected += (rejected_substring) => SearchInActive();
+        SearchBar.TextSubmitted += (new_text) => SearchInActive();
     }
 
     // Called every frame. 'delta' is the elapsed time since the previous frame.
-    public override void _Process(double delta) { }
+    public override void _Process(double delta) 
+    { 
+        if (SearchBar.Text != "")
+        {
+            SearchActive();
+        }
+    }
+
+    private void SearchActive()
+    {
+        Filters.Hide();
+    }
+
+    private void SearchInActive()
+    {
+        Filters.Show();
+        SearchBar.ReleaseFocus();
+    }
 
     private void SearchTag(String new_text)
     {
+        GetTree().CallGroup("filter", "Unpress");
         String input = new_text.Capitalize();
         int CourseCount = Course_Select.GetChildCount();
         for (int i = 0; i < CourseCount; i++)
@@ -93,12 +119,12 @@ public partial class ExplorePage : Tool
         CourseProfile.Call("ClearDisplay");
     }
 
-    private void SwitchTab()
+    /*private void SwitchTab()
     {
         AccountDetails.Toggled -= OpenPanel;
         AccountSettings.Pressed -= SwitchTab;
         SwitchTo(_AccountSettings);
-    }
+    }*/
 
     private void OpenPanel(bool toggle)
     {

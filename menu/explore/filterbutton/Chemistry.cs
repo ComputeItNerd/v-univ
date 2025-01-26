@@ -15,4 +15,10 @@ public partial class Chemistry : Button
             GetTree().CallGroup("ButtonCourses", "CourseHide", "chemistry");
         }
     }
+
+    private void Unpress()
+    {
+        ButtonPressed = false;
+        GetTree().CallGroup("ButtonCourses", "CourseHide", "all");
+    }
 }

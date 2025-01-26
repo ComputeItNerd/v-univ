@@ -1,0 +1,82 @@
+[gd_scene load_steps=7 format=3 uid="uid://cndefmxdm1qvx"]
+
+[ext_resource type="Script" path="res://menu/explore/other/Board.cs" id="1_arqf3"]
+[ext_resource type="FontFile" uid="uid://bsiaklu8tbxy8" path="res://assets/fontstyle/whatever it takes.ttf" id="2_8x3ef"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g71k8"]
+bg_color = Color(0.473976, 0.473976, 0.473976, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kc1ya"]
+bg_color = Color(1.0679e-07, 0.128381, 0.0370028, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.458405, 0.458405, 0.458405, 1)
+
+[sub_resource type="CodeHighlighter" id="CodeHighlighter_t1y38"]
+number_color = Color(1, 1, 1, 1)
+symbol_color = Color(1, 1, 1, 1)
+function_color = Color(1, 1, 1, 1)
+member_variable_color = Color(1, 1, 1, 1)
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_667yj"]
+
+[node name="board" type="Control" node_paths=PackedStringArray("board", "Anim")]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_arqf3")
+board = NodePath("AspectRatioContainer/MarginContainer/TextEdit")
+Anim = NodePath("AnimationPlayer")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_g71k8")
+
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+ratio = 1.8
+
+[node name="MarginContainer" type="MarginContainer" parent="AspectRatioContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="Panel" type="Panel" parent="AspectRatioContainer/MarginContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_kc1ya")
+
+[node name="TextEdit" type="TextEdit" parent="AspectRatioContainer/MarginContainer"]
+layout_mode = 2
+theme_override_constants/outline_size = 0
+theme_override_constants/line_spacing = 30
+theme_override_constants/caret_width = 2
+theme_override_fonts/font = ExtResource("2_8x3ef")
+theme_override_font_sizes/font_size = 50
+placeholder_text = "   Text"
+editable = false
+autowrap_mode = 2
+scroll_fit_content_height = true
+syntax_highlighter = SubResource("CodeHighlighter_t1y38")
+text_direction = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_667yj")
+}

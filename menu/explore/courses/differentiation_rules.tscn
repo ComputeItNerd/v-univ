@@ -1,13 +1,18 @@
-[gd_scene load_steps=2 format=3 uid="uid://datrjxytl5s4b"]
+[gd_scene load_steps=4 format=3 uid="uid://datrjxytl5s4b"]
 
 [ext_resource type="Script" path="res://menu/explore/courses/DifferentiationRules.cs" id="1_vbsb2"]
+[ext_resource type="PackedScene" uid="uid://cndefmxdm1qvx" path="res://menu/explore/other/board.tscn" id="2_vlqur"]
+[ext_resource type="PackedScene" uid="uid://4xgrbklij4n1" path="res://menu/explore/other/character.tscn" id="3_udjof"]
 
-[node name="Differentiation_rules" type="Control"]
+[node name="Differentiation_rules" type="Control" node_paths=PackedStringArray("board", "character")]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_vbsb2")
+board = NodePath("PanelContainer/board")
+character = NodePath("PanelContainer/character")
 
 [node name="PanelContainer" type="MarginContainer" parent="."]
+layout_mode = 0
 offset_right = 1152.0
 offset_bottom = 648.0
 size_flags_horizontal = 3
@@ -25,3 +30,9 @@ offset_left = 24.0
 offset_top = 24.0
 offset_right = 1136.0
 offset_bottom = 632.0
+
+[node name="board" parent="PanelContainer" instance=ExtResource("2_vlqur")]
+layout_mode = 2
+
+[node name="character" parent="PanelContainer" instance=ExtResource("3_udjof")]
+layout_mode = 2

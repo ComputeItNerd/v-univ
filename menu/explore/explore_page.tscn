@@ -68,6 +68,7 @@ corner_radius_bottom_left = 2
 shadow_size = 3
 
 [sub_resource type="ButtonGroup" id="ButtonGroup_6cfnb"]
+allow_unpress = true
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h1xwp"]
 bg_color = Color(0, 0.301961, 0.411765, 1)
@@ -244,7 +245,7 @@ theme_override_constants/margin_bottom = 5
 layout_mode = 2
 theme_override_constants/separation = 10
 
-[node name="home" type="Button" parent="MarginContainer/BackGround/MarginContainer/MarginContainer/HBoxContainer"]
+[node name="home" type="Button" parent="MarginContainer/BackGround/MarginContainer/MarginContainer/HBoxContainer" groups=["filter"]]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_styles/focus = SubResource("StyleBoxEmpty_3mera")
@@ -262,7 +263,7 @@ button_group = SubResource("ButtonGroup_6cfnb")
 text = "Home"
 script = ExtResource("2_4gg5p")
 
-[node name="programming" type="Button" parent="MarginContainer/BackGround/MarginContainer/MarginContainer/HBoxContainer"]
+[node name="programming" type="Button" parent="MarginContainer/BackGround/MarginContainer/MarginContainer/HBoxContainer" groups=["filter"]]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_styles/focus = SubResource("StyleBoxEmpty_3mera")
@@ -280,7 +281,7 @@ button_group = SubResource("ButtonGroup_6cfnb")
 text = "Programming"
 script = ExtResource("3_w66we")
 
-[node name="chemistry" type="Button" parent="MarginContainer/BackGround/MarginContainer/MarginContainer/HBoxContainer"]
+[node name="chemistry" type="Button" parent="MarginContainer/BackGround/MarginContainer/MarginContainer/HBoxContainer" groups=["filter"]]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_styles/focus = SubResource("StyleBoxEmpty_3mera")
@@ -298,7 +299,7 @@ button_group = SubResource("ButtonGroup_6cfnb")
 text = "Chemistry"
 script = ExtResource("4_g0wrb")
 
-[node name="mathematics" type="Button" parent="MarginContainer/BackGround/MarginContainer/MarginContainer/HBoxContainer"]
+[node name="mathematics" type="Button" parent="MarginContainer/BackGround/MarginContainer/MarginContainer/HBoxContainer" groups=["filter"]]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_styles/focus = SubResource("StyleBoxEmpty_3mera")
@@ -316,7 +317,7 @@ button_group = SubResource("ButtonGroup_6cfnb")
 text = "Mathematics"
 script = ExtResource("5_mt48g")
 
-[node name="philosphy" type="Button" parent="MarginContainer/BackGround/MarginContainer/MarginContainer/HBoxContainer"]
+[node name="philosphy" type="Button" parent="MarginContainer/BackGround/MarginContainer/MarginContainer/HBoxContainer" groups=["filter"]]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_styles/focus = SubResource("StyleBoxEmpty_3mera")
@@ -362,6 +363,7 @@ layout_mode = 2
 placeholder_text = "Search Course"
 max_length = 42
 clear_button_enabled = true
+select_all_on_focus = true
 
 [node name="MarginContainer4" type="MarginContainer" parent="MarginContainer/BackGround"]
 layout_mode = 0

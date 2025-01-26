@@ -2,7 +2,7 @@ using System;
 using CommonTools;
 using Godot;
 
-public partial class SettingsMenu : Tool
+public partial class SettingsMenu : Control
 {
     private TextureButton back;
     private Button themes;

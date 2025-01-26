@@ -15,4 +15,10 @@ public partial class Philosphy : Button
             GetTree().CallGroup("ButtonCourses", "CourseHide", "philosophy");
         }
     }
+
+    private void Unpress()
+    {
+        ButtonPressed = false;
+        GetTree().CallGroup("ButtonCourses", "CourseHide", "all");
+    }
 }

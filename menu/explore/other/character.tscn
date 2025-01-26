@@ -1,0 +1,195 @@
+[gd_scene load_steps=17 format=3 uid="uid://4xgrbklij4n1"]
+
+[ext_resource type="Script" path="res://menu/explore/other/Character.cs" id="1_y5yp3"]
+[ext_resource type="Texture2D" uid="uid://2r10ojhgq5xv" path="res://assets/EmptyProff.png" id="2_hpduo"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vftwp"]
+bg_color = Color(0.0249668, 0.199632, 0.264792, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0, 1, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_85djs"]
+bg_color = Color(0, 1, 0, 1)
+border_blend = true
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4shf2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3vukk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dcg7b"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ejusr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yivqp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1ovyt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ebwh0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6mvaf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_smoru"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xbwem"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nj7ag"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5b206"]
+bg_color = Color(1, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[node name="character" type="Control" node_paths=PackedStringArray("dialogue", "Yes", "No", "Ask")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_y5yp3")
+dialogue = NodePath("dialogue")
+Yes = NodePath("HBoxContainer/Panel/Button")
+No = NodePath("HBoxContainer/Panel2/Button2")
+Ask = NodePath("HBoxContainer")
+
+[node name="appearance" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 472.0
+offset_top = 32.0
+offset_right = 472.0
+offset_bottom = 32.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_hpduo")
+
+[node name="dialogue" type="Label" parent="."]
+layout_mode = 0
+offset_left = 176.0
+offset_top = 352.0
+offset_right = 792.0
+offset_bottom = 456.0
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+clip_text = true
+
+[node name="Panel" type="Panel" parent="dialogue"]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_vftwp")
+metadata/_edit_lock_ = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 376.0
+offset_top = 264.0
+offset_right = 488.0
+offset_bottom = 304.0
+theme_override_constants/separation = 45
+
+[node name="Panel" type="Panel" parent="HBoxContainer"]
+show_behind_parent = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_85djs")
+
+[node name="Button" type="Button" parent="HBoxContainer/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_4shf2")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_3vukk")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_dcg7b")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_ejusr")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_yivqp")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_1ovyt")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ebwh0")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_6mvaf")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_smoru")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_xbwem")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_nj7ag")
+action_mode = 0
+text = "Yes"
+
+[node name="Panel2" type="Panel" parent="HBoxContainer"]
+show_behind_parent = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_5b206")
+
+[node name="Button2" type="Button" parent="HBoxContainer/Panel2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 4
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_4shf2")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_3vukk")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_dcg7b")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_ejusr")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_yivqp")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_1ovyt")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ebwh0")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_6mvaf")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_smoru")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_xbwem")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_nj7ag")
+action_mode = 0
+text = "No"

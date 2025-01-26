@@ -2,7 +2,7 @@ using System;
 using CommonTools;
 using Godot;
 
-public partial class Themes : Tool
+public partial class Themes : Control
 {
     private TextureButton back;
     private ColorPickerButton bg_color;

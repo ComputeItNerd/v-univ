@@ -3,7 +3,7 @@ using Godot;
 
 namespace CommonTools
 {
-    public partial class Tool : Control
+    public partial class tool : Control
     {
         public const String _ExplorePage = "res://menu/explore/explore_page.tscn";
         public const String _AccountSettings = "res://account_settings/account_settings.tscn";

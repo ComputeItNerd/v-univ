@@ -2,7 +2,7 @@ using System;
 using CommonTools;
 using Godot;
 
-public partial class CoursePortfolio : Tool
+public partial class CoursePortfolio : Control
 {
     private TextureButton back;
     private VBoxContainer Display;

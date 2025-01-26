@@ -15,4 +15,10 @@ public partial class Home : Button
             GetTree().CallGroup("ButtonCourses", "CourseHide", "all");
         }
     }
+
+    private void Unpress()
+    {
+        ButtonPressed = false;
+        GetTree().CallGroup("ButtonCourses", "CourseHide", "all");
+    }
 }
