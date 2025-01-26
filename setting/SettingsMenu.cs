@@ -14,9 +14,6 @@ public partial class SettingsMenu : Tool
     public override void _Ready()
     {
         back = GetNode<TextureButton>("back");
-        themes = GetNode<Button>(
-            "settings/Panel/VBoxContainer/Panel/PanelContainer/VBoxContainer/Themes/themes"
-        );
     }
 
     // Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -25,10 +22,6 @@ public partial class SettingsMenu : Tool
         if (back.ButtonPressed == true)
         {
             //SwitchTo(MainMenu);
-        }
-        else if (themes.ButtonPressed == true)
-        {
-            //SwitchTo(Themes);
         }
     }
 }

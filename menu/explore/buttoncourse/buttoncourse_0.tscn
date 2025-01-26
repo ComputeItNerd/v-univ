@@ -1,0 +1,87 @@
+[gd_scene load_steps=8 format=3 uid="uid://burb7a5t1q7rl"]
+
+[ext_resource type="Script" path="res://menu/explore/buttoncourse/Buttoncourse0.cs" id="1_w3koo"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_87epm"]
+bg_color = Color(0.0588235, 0.180392, 0.223529, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.99, 0, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h0t2f"]
+bg_color = Color(0, 0.403922, 0.423529, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.270588, 0.560784, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3rto8"]
+bg_color = Color(0.506432, 0.219115, 0.506742, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3glyc"]
+bg_color = Color(0, 0.403922, 0.423529, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.270588, 0.560784, 1, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bp2m7"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+bg_color = Color(0, 0.403922, 0.423529, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.270588, 0.560784, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_ms7kr"]
+
+[node name="Buttoncourse_0" type="Button" groups=["ButtonCourses", "filter"]]
+visible = false
+size_flags_vertical = 3
+theme_override_styles/focus = SubResource("StyleBoxFlat_87epm")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_h0t2f")
+theme_override_styles/hover = SubResource("StyleBoxFlat_3rto8")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_3glyc")
+theme_override_styles/normal = SubResource("StyleBoxFlat_bp2m7")
+toggle_mode = true
+action_mode = 0
+button_group = SubResource("ButtonGroup_ms7kr")
+text = "Addition of Whole Numbers"
+script = ExtResource("1_w3koo")
+
+[connection signal="button_down" from="." to="." method="_on_button_down"]
+[connection signal="button_up" from="." to="." method="_on_button_up"]
+[connection signal="tree_entered" from="." to="." method="_on_tree_entered"]

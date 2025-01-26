@@ -56,4 +56,5 @@ namespace CommonTools
             node.Text = text.Remove(0, 2);
         }
     }
+
 }

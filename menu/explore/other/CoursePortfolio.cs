@@ -35,7 +35,26 @@ public partial class CoursePortfolio : Tool
                 {
                     String s = (String)n.Name;
                     String d = (String)dict[info[i]];
-                    n.Text = $"{s.Capitalize()} : {d.Capitalize()}";
+                    n.Text = $" {s.Capitalize()} : {d.Capitalize()}";
+                }
+            }
+        }
+    }
+
+    private void DoNotDisplayInformation()
+    {
+        int CountButton = Display.GetChildCount();
+
+        for (int button = 0; button < CountButton; button++)
+        {
+            Label n = (Label)Display.GetChild(button);
+            var info = new Godot.Collections.Array<String> { "course", "subject", "professor" };
+            int count = info.Count;
+            for (int i = 0; i < count ; i++)
+            {
+                if (n.Name == info[i])
+                {
+                    n.Text = $" No information : No information";
                 }
             }
         }

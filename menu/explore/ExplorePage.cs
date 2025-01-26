@@ -41,8 +41,6 @@ public partial class ExplorePage : Tool
         AccountSettings.Pressed += SwitchTab;
 
         SearchBar.TextChanged += (new_text) => SearchTag(new_text);
-
-        GetTree().CallGroup("ButtonCourses", "CourseShow", "all");
     }
 
     // Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -71,15 +69,23 @@ public partial class ExplorePage : Tool
     private void SetCourse(String course)
     {
         var file = (PackedScene)ResourceLoader.Load($"res://menu/explore/courses/{course}.tscn");
-        Node instanced = file.Instantiate();
-        if (!instanced.HasMethod("GetTag"))
-        {
-            GD.PushError($"Given path {course} is not a course file.");
-        }
 
-        var dict = instanced.Call("GetCourseInfo");
-        CourseProfile.Call("DisplayInformation", dict);
-        instanced.Free();
+        if (file == null)
+        {
+            CourseProfile.Call("DoNotDisplayInformation");
+        }
+        else
+        {
+            Node instanced = file.Instantiate();
+            if (!instanced.HasMethod("GetTag"))
+            {
+                GD.PushError($"Given path {course} is not a course file.");
+            }
+
+            var dict = instanced.Call("GetCourseInfo");
+            CourseProfile.Call("DisplayInformation", dict);
+            instanced.Free();
+        }
     }
 
     private void RemoveCourse()

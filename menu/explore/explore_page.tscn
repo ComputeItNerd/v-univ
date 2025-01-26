@@ -1,16 +1,14 @@
-[gd_scene load_steps=59 format=3 uid="uid://cthtmw8i085a5"]
+[gd_scene load_steps=47 format=3 uid="uid://cthtmw8i085a5"]
 
 [ext_resource type="Script" path="res://menu/explore/ExplorePage.cs" id="1_smi0w"]
-[ext_resource type="Script" path="res://menu/explore/Home.cs" id="2_4gg5p"]
+[ext_resource type="Script" path="res://menu/explore/filterbutton/Home.cs" id="2_4gg5p"]
 [ext_resource type="Texture2D" uid="uid://wfuln6oak6m6" path="res://assets/X_icon.png" id="2_ke0ya"]
-[ext_resource type="PackedScene" uid="uid://bjgssvj2qytbe" path="res://menu/explore/courses/course_portfolio.tscn" id="3_j02hl"]
-[ext_resource type="ButtonGroup" uid="uid://bth87wpqb3b1p" path="res://menu/explore/new_button_group.tres" id="3_rajrj"]
-[ext_resource type="Script" path="res://menu/explore/Programming.cs" id="3_w66we"]
-[ext_resource type="Script" path="res://menu/explore/Buttoncourse0.cs" id="4_6pfhe"]
-[ext_resource type="Script" path="res://menu/explore/Chemistry.cs" id="4_g0wrb"]
-[ext_resource type="Script" path="res://menu/explore/Buttoncourse1.cs" id="5_7n37u"]
-[ext_resource type="Script" path="res://menu/explore/Mathematics.cs" id="5_mt48g"]
-[ext_resource type="Script" path="res://menu/explore/Philosphy.cs" id="6_tyktg"]
+[ext_resource type="PackedScene" uid="uid://bjgssvj2qytbe" path="res://menu/explore/other/course_portfolio.tscn" id="3_j02hl"]
+[ext_resource type="Script" path="res://menu/explore/filterbutton/Programming.cs" id="3_w66we"]
+[ext_resource type="Script" path="res://menu/explore/filterbutton/Chemistry.cs" id="4_g0wrb"]
+[ext_resource type="Script" path="res://menu/explore/filterbutton/Mathematics.cs" id="5_mt48g"]
+[ext_resource type="Script" path="res://menu/explore/filterbutton/Philosphy.cs" id="6_tyktg"]
+[ext_resource type="PackedScene" uid="uid://burb7a5t1q7rl" path="res://menu/explore/buttoncourse/buttoncourse_0.tscn" id="9_2mcy2"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x8iug"]
 bg_color = Color(0.19603, 0.303576, 0.343082, 1)
@@ -140,71 +138,7 @@ border_width_bottom = 2
 border_color = Color(0.270588, 0.560784, 1, 1)
 shadow_size = 5
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_87epm"]
-bg_color = Color(0, 0.403922, 0.423529, 1)
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-border_color = Color(0.266667, 0.556863, 0.992157, 1)
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8rost"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t3kwb"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_psevd"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g5rpb"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pbfbr"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3rto8"]
-bg_color = Color(0, 0.403922, 0.423529, 1)
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-border_color = Color(0, 0, 0, 1)
-corner_radius_top_left = 20
-corner_radius_top_right = 20
-corner_radius_bottom_right = 20
-corner_radius_bottom_left = 20
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_clhys"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3glyc"]
-bg_color = Color(0, 0.403922, 0.423529, 1)
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-border_color = Color(0.270588, 0.560784, 1, 1)
-corner_radius_top_left = 20
-corner_radius_top_right = 20
-corner_radius_bottom_right = 20
-corner_radius_bottom_left = 20
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rtxf0"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bp2m7"]
-content_margin_left = 10.0
-content_margin_top = 10.0
-content_margin_right = 10.0
-content_margin_bottom = 10.0
-bg_color = Color(0, 0.403922, 0.423529, 1)
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-border_color = Color(0.270588, 0.560784, 1, 1)
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
+[sub_resource type="ButtonGroup" id="ButtonGroup_gtwoa"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r8wgb"]
 bg_color = Color(0, 0.301961, 0.411765, 1)
@@ -547,47 +481,12 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Buttoncourse_0" type="Button" parent="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel/HBoxContainer/MarginContainer/course/ScrollContainer/course_selection" groups=["ButtonCourses"]]
-visible = false
+[node name="Buttoncourse_0" parent="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel/HBoxContainer/MarginContainer/course/ScrollContainer/course_selection" instance=ExtResource("9_2mcy2")]
 layout_mode = 2
-size_flags_vertical = 3
-theme_override_styles/focus = SubResource("StyleBoxFlat_87epm")
-theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_8rost")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_t3kwb")
-theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_psevd")
-theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_g5rpb")
-theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_pbfbr")
-theme_override_styles/hover = SubResource("StyleBoxFlat_3rto8")
-theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_clhys")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_3glyc")
-theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_rtxf0")
-theme_override_styles/normal = SubResource("StyleBoxFlat_bp2m7")
-toggle_mode = true
-action_mode = 0
-button_group = ExtResource("3_rajrj")
-text = "Addition of Whole Numbers"
-script = ExtResource("4_6pfhe")
-
-[node name="Buttoncourse_1" type="Button" parent="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel/HBoxContainer/MarginContainer/course/ScrollContainer/course_selection" groups=["ButtonCourses"]]
-visible = false
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_styles/focus = SubResource("StyleBoxFlat_87epm")
-theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_8rost")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_t3kwb")
-theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_psevd")
-theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_g5rpb")
-theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_pbfbr")
-theme_override_styles/hover = SubResource("StyleBoxFlat_3rto8")
-theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_clhys")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_3glyc")
-theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_rtxf0")
-theme_override_styles/normal = SubResource("StyleBoxFlat_bp2m7")
-toggle_mode = true
-action_mode = 0
-button_group = ExtResource("3_rajrj")
-text = "Introduction to Chemistry"
-script = ExtResource("5_7n37u")
+button_group = SubResource("ButtonGroup_gtwoa")
+Tag = "mathematics"
+Title = "Differentiation Rules"
+CourseName = "differentiation_rules"
 
 [node name="MarginContainer2" type="MarginContainer" parent="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel/HBoxContainer"]
 layout_mode = 2
@@ -610,6 +509,7 @@ anchor_right = 0.978417
 offset_bottom = -97.0
 
 [node name="MarginContainer6" type="MarginContainer" parent="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 
@@ -692,8 +592,3 @@ clip_text = true
 [connection signal="toggled" from="MarginContainer/BackGround/MarginContainer/MarginContainer/HBoxContainer/chemistry" to="MarginContainer/BackGround/MarginContainer/MarginContainer/HBoxContainer/chemistry" method="_on_toggled"]
 [connection signal="toggled" from="MarginContainer/BackGround/MarginContainer/MarginContainer/HBoxContainer/mathematics" to="MarginContainer/BackGround/MarginContainer/MarginContainer/HBoxContainer/mathematics" method="_on_toggled"]
 [connection signal="toggled" from="MarginContainer/BackGround/MarginContainer/MarginContainer/HBoxContainer/philosphy" to="MarginContainer/BackGround/MarginContainer/MarginContainer/HBoxContainer/philosphy" method="_on_toggled"]
-[connection signal="button_down" from="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel/HBoxContainer/MarginContainer/course/ScrollContainer/course_selection/Buttoncourse_0" to="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel/HBoxContainer/MarginContainer/course/ScrollContainer/course_selection/Buttoncourse_0" method="_on_button_down"]
-[connection signal="button_up" from="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel/HBoxContainer/MarginContainer/course/ScrollContainer/course_selection/Buttoncourse_0" to="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel/HBoxContainer/MarginContainer/course/ScrollContainer/course_selection/Buttoncourse_0" method="_on_button_up"]
-[connection signal="tree_entered" from="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel/HBoxContainer/MarginContainer/course/ScrollContainer/course_selection/Buttoncourse_0" to="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel/HBoxContainer/MarginContainer/course/ScrollContainer/course_selection/Buttoncourse_0" method="_on_tree_entered"]
-[connection signal="button_down" from="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel/HBoxContainer/MarginContainer/course/ScrollContainer/course_selection/Buttoncourse_1" to="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel/HBoxContainer/MarginContainer/course/ScrollContainer/course_selection/Buttoncourse_1" method="_on_button_down"]
-[connection signal="button_up" from="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel/HBoxContainer/MarginContainer/course/ScrollContainer/course_selection/Buttoncourse_1" to="MarginContainer/BackGround/MarginContainer3/HBoxContainer/HSplitContainer/MarginContainer3/Panel/HBoxContainer/MarginContainer/course/ScrollContainer/course_selection/Buttoncourse_1" method="_on_button_up"]

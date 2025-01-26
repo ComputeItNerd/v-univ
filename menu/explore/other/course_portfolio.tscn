@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bjgssvj2qytbe"]
 
-[ext_resource type="Script" path="res://menu/explore/courses/CoursePortfolio.cs" id="1_n5j48"]
+[ext_resource type="Script" path="res://menu/explore/other/CoursePortfolio.cs" id="1_n5j48"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o5pmp"]
 bg_color = Color(8.66354e-07, 0.300587, 0.413635, 1)

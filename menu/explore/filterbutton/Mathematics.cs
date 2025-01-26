@@ -5,6 +5,7 @@ public partial class Mathematics : Button
 {
     private void _on_toggled(bool toggle)
     {
+        GetTree().CallGroup("ButtonCourses", "CourseHide", "mathematics");
         if (toggle)
         {
             GetTree().CallGroup("ButtonCourses", "CourseShow", "mathematics");
